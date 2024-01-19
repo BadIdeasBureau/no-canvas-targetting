@@ -13,12 +13,12 @@ Also need to spoof canvas.tokens.controlled, since it won't exist
 
 Also will need to fix various other bits in the token targeting workflow which might rely on the canvas, e.g. user.updateTokenTargets
 
-And need to be able to clear targets/control when switching scenes
+And need to be able to clear targets/control when switching scenes - probably just override user.updateTokenTargets appropriately, and ensure that gets called as needed
 
 And may need to fire appropriate hooks
 
 And then need to test with MidiQoL in 5e, in PF2, and in Lancer once that comes out
 
-Plus going to need some way to handle template placement, which... no idea how that'll work
+Plus may need some way to handle template placement, which... no idea how that'll work - can skip this in MidiQoL, by disabling template targeting, but if this works might want to see if TPosney can be persuaded into a per-user override to that as a user setting (so can still template target on canvas-enabled clients)
 
 UI: Grid of tokens, buttons to target/control those tokens (possible toggle for multi/single select)
